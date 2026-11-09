@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/vaneui/vaneui/main/.github/assets/org-banner-dark.png">
+  <img alt="VaneUI: deliver clean UI without complex code. A Card written with boolean props and the card it renders." src="https://raw.githubusercontent.com/vaneui/vaneui/main/.github/assets/org-banner-light.png">
+</picture>
+
 # VaneUI
 
 React component library with a boolean props API, built on Tailwind CSS v4.
