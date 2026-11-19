@@ -1,0 +1,53 @@
+name: Bug report
+description: Something renders or behaves differently from what the docs say
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: package
+    attributes:
+      label: Package
+      options:
+        - "@vaneui/ui"
+        - "@vaneui/md"
+        - "@vaneui/mcp"
+        - vaneui.com (site or docs)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The installed version, from `npm ls @vaneui/ui` (or the package you picked).
+      placeholder: 1.6.0
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happens
+      description: What you see, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Code that shows it
+      description: The smallest JSX or Markdown that reproduces the problem, or a link to a repository.
+      render: tsx
+    validations:
+      required: true
+  - type: dropdown
+    id: styles
+    attributes:
+      label: How the styles are loaded
+      description: For component and styling bugs.
+      options:
+        - The prebuilt stylesheet (@vaneui/ui/css)
+        - My own Tailwind CSS v4 build (@vaneui/ui/vars)
+        - Not relevant
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: React version, framework and bundler, browser.
+      placeholder: React 19, Next.js 16, Chrome 142
