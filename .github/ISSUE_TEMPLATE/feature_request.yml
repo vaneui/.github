@@ -1,0 +1,22 @@
+name: Feature request
+description: A new component, a new prop, or a change to an existing one
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What you are trying to build
+      description: The interface or task, and where VaneUI gets in the way today.
+    validations:
+      required: true
+  - type: textarea
+    id: api
+    attributes:
+      label: The code you would like to write
+      description: A sketch of the JSX or Markdown, with the prop names you would expect.
+      render: tsx
+  - type: textarea
+    id: today
+    attributes:
+      label: What you do today
+      description: The workaround, if there is one (custom classes, your own component).
